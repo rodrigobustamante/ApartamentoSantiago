@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Idioma/Language</title>
+	<script src="js/jquery.simple-text-rotator.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+	<link rel="stylesheet" href="css/animate.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="js/jquery.simple-text-rotator.js"></script>
+</head>
+<body style="background-image: url(images/panoramica.jpg);">
+	<header>
+		
+	</header>
+	<div id="container" class="container">
+		<div class="card-panel hoverable">
+			<div id="language" class="card-content center-align animated pulse">
+					<h3><span class="rotate">Seleccionar Idioma, Select Language, Selecionar Idioma</span></h3>
+					<a href="es/inicio.html">Español</a>
+					<span>/</span>
+					<a href="en/home.html">English</a>
+					<span>/</span>
+					<a href="pt/inicio.html">Português</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+		$(".rotate").delay(2000).textrotator({
+		animation: "dissolve",
+		separator: ",",
+		speed: 2000
+			}); 
+		});
+	</script>
+</body>
+</html>

@@ -3,10 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Inicio</title>
-	 <!-- Compiled and minified CSS -->
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  	<!-- Compiled and minified JavaScript -->
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+
 </head>
 <body>
 	<header>
@@ -23,10 +24,41 @@
 		      </ul>
 		    </div>
 		</nav>
+    <br>
 	</header>
 	<div class="container">
-		<div>
-
+		<div class="center-align">
+        <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="../images/bellasartes.jpg" width="945" height="400">
+              <div class="caption left-align">
+                <h5 class="light black-text text-lighten-3">Museo de Bellas Artes</h5>
+              </div>
+            </li>
+            <li>
+              <img src="../images/lastarria.jpg" width="945" height="400">
+              <div class="caption left-align">
+                <h5 class="light black-text text-lighten-3">Barrio Lastarrias</h5>
+              </div>
+            </li>
+            <li>
+              <img src="../images/santalucia.jpg" width="945" height="400">
+              <div class="caption left-align">
+                <h5 class="light black-text text-lighten-3">Cerro Santa Lucia</h5>
+              </div>
+            </li>
+            <li>
+              <img src="../images/bellavista.jpg" width="945" height="400">
+              <div class="caption left-align">
+                <h5 class="light black-text text-lighten-3">Barrio Bellavista</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <div class="card-panel hoverable green darken-4">
+        <h4 class="grey-text text-lighten-4">El mejor lugar para su estadía en Santiago</h4>
+    </div>
 		</div>
 		<div>
 			
@@ -60,5 +92,12 @@
             </div>
         </div>
     <footer>
+    <script src="../js/jquery-2.2.3.min.js"></script>
+    <script src="../js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+    });
+    </script>
 </body>
 </html>

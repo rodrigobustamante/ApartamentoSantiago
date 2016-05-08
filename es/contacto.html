@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <title>Contacto</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
-   <!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <!-- Jquery JS -->
   <script src="../js/jquery-2.2.3.min.js"></script>
+   <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <!-- Materialize JS -->
-  <script src="../js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+  <!--Validaciones JS -->
+  <script type="text/javascript" src="../js/validaciones.js"></script>
 </head>
 <body>
   <header>
@@ -46,18 +47,26 @@
             <div class="input-field col s7">
               <input id="nombre" type="text" class="validate">
               <label for="nombre">Nombre</label>
+              <span id="checkNombre"></span>
+              <span id="mensaje_nombre"></span>
             </div>
             <div class="input-field col s7">
               <input id="correo" type="text" class="validate">
               <label for="correo">Correo Electrónico</label>
+              <span id="checkCorreo"></span>
+              <span id="mensaje_correo"></span>
             </div>
             <div class="input-field col s7">
               <input id="asunto" type="text" class="validate">
               <label for="asunto">Asunto</label>
+              <span id="checkAsunto"></span>
+              <span id="mensaje_asunto"></span>
             </div>
             <div class="input-field col s7">
               <textarea id="mensaje" class="materialize-textarea"></textarea>
               <label for="mensaje">Mensaje</label>
+              <span id="checkMensaje"></span>
+              <span id="mensaje_mensaje"></span>
             </div>
             <div class="col s7">
               <button type="submit" class="green darken-4 waves-effect waves-light btn">Enviar</button>

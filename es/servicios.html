@@ -13,24 +13,51 @@
 </head>
 <body>
 	<header>
-		<nav>
-			<div class="nav-wrapper green darken-4">
-		      <a href="inicio.html" class="brand-logo"><img src="../images/logo.png" alt="logo"></a>
-		      <ul id="nav-mobile" class="right hide-on-med-and-down">
-		        <li><a href="inicio.html">Inicio</a></li>
-		        <li><a href="servicios.html">Servicios</a></li>
-		        <li><a href="galeria.html">Galería</a></li>
-		        <li><a href="entorno.html">Entorno</a></li>
-		        <li><a href="nosotros.html">Nosotros</a></li>
-		        <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="../index.html">Cambiar Idioma</a></li>
-		      </ul>
-		    </div>
-		</nav>
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+          <a href="inicio.html" class="brand-logo"><img src="../images/logo.png" alt="logo"></a>
+          <!--Boton de menu en celulares-->
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <!--Menu-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="entorno.html">Entorno</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown1">Cambiar Idioma</a>
+            </li>
+          </ul>
+          <!--Menu de cambio de idioma-->
+          <ul class="dropdown-content" id="dropdown1">
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../en/services.html">English</a></li>
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../pt/servicos.html">Portuguese</a></li>
+          </ul>
+          <!--Menu desplegable de en celulares-->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="entorno.html">Entorno</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown2">Cambiar Idioma</a>
+            </li>
+          </ul>
+          <!--Menu desplegable de idioma en celulares-->
+          <ul class="dropdown-content" id="dropdown2">
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../en/home.html">English</a></li>
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../pt/inicio.html">Portuguese</a></li>
+          </ul>
+        </div>
+    </nav>
     <br>
-	</header>
+  </header>
 	<div class="container">
-		<div class="card-panel hoverable green darken-4">
+		<div class="card-panel hoverable grey darken-4">
 			<h3 class="grey-text text-lighten-4">Servicios</h3>
 		</div>
 		 <!-- Cards -->
@@ -41,9 +68,9 @@
               <div class="card">
               <div class="card-image">
                 <img src="../images/habitacion.jpg">
-                <span class="card-title">Apartamentos</span>
               </div>
               <div class="card-content">
+                <span class="card-title">Apartamentos</span>
                 <p>Nuestras cómodas y amplias habitaciones están equipadas con cama matrimonial, TV cable.
 				La Habitación principal en suite, todas nuestras habitaciones cuentan con refrigerador, cocina totalmente equipada.</p>
               </div>
@@ -53,9 +80,10 @@
               <div class="card">
               <div class="card-image">
                 <img src="../images/piscina2.jpg">
-                <span class="card-title">Piscina con vista panoramica</span>
+                
               </div>
               <div class="card-content">
+                <span class="card-title">Piscina con vista panoramica</span>
                 <p>	Contamos con una hermosa piscina con vista panorámica de Santiago.
 					Nuestros clientes tienen completo acceso a estos servicios.
 					Haga un alto y disfrute de los servicios que tenemos para nuestros clientes.</p>
@@ -66,9 +94,10 @@
               <div class="card">
               <div class="card-image">
                 <img src="../images/monumento.jpg">
-                <span class="card-title">Santiago Centro</span>
+                
               </div>
               <div class="card-content">
+                <span class="card-title">Santiago Centro</span>
                 <p>
                 Santiago centro es el entorno perfecto para conocer museos, parques y una gran variedad de restaurantes los cuales le darán momentos únicos.
 				Santiago ofrece una amplia variedad de vida cultural con teatros y conciertos.
@@ -80,9 +109,9 @@
               <div class="card">
               <div class="card-image">
                 <img src="../images/lider.jpg">
-                <span class="card-title">Supermercado</span>
               </div>
-              <div class="card-content">
+              <div class="card-content">              
+                <span class="card-title">Supermercado</span>
                 <p>
                 Contamos con un Supermercado a pasos del edificio, en el cual encontrarán todo lo necesario para su estadia en Santiago.
 				</p>
@@ -94,7 +123,7 @@
         </aside>
       </div>
 	</div>
-	<footer class="page-footer green darken-4">
+	<footer class="page-footer grey darken-4">
         <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -123,5 +152,12 @@
             </div>
         </div>
     </footer>
+  <script>
+      $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+      $(".dropdown-button").dropdown();
+      $(".button-collapse").sideNav();
+      });
+  </script>
 </body>
 </html>

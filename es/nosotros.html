@@ -14,11 +14,11 @@
 <body>
   <header>
     <nav>
-      <div class="nav-wrapper green darken-4">
-          <a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only">
-            <i class="material-icons">menu</i>
-          </a>
+      <div class="nav-wrapper grey darken-4">
           <a href="inicio.html" class="brand-logo"><img src="../images/logo.png" alt="logo"></a>
+          <!--Boton de menu en celulares-->
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <!--Menu-->
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="inicio.html">Inicio</a></li>
             <li><a href="servicios.html">Servicios</a></li>
@@ -26,14 +26,39 @@
             <li><a href="entorno.html">Entorno</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="../index.html">Cambiar Idioma</a></li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown1">Cambiar Idioma</a>
+            </li>
           </ul>
-      </div>
+          <!--Menu de cambio de idioma-->
+          <ul class="dropdown-content" id="dropdown1">
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../en/us.html">English</a></li>
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../pt/nos.html">Portuguese</a></li>
+          </ul>
+          <!--Menu desplegable de en celulares-->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="entorno.html">Entorno</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown2">Cambiar Idioma</a>
+            </li>
+          </ul>
+          <!--Menu desplegable de idioma en celulares-->
+          <ul class="dropdown-content" id="dropdown2">
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../en/home.html">English</a></li>
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../pt/inicio.html">Portuguese</a></li>
+          </ul>
+        </div>
     </nav>
+    <br>
   </header>
   <br>
   <div class="container">
-    <div class="card-panel hoverable green darken-4">
+    <div class="card-panel hoverable grey darken-4">
       <h3 class="grey-text text-lighten-4">Nosotros</h3>      
     </div>
     <div>
@@ -46,7 +71,7 @@
       <p>Algunos gozan de vistas al cerro de Santa Lucía desde el balcón. Todos los apartamentos cuentan con una decoración moderna, suelo de parquet y sofás cómodos. El establecimiento proporciona un teléfono móvil gratuito por apartamento.</p>
     </div>
   </div>
-  <footer class="page-footer green darken-4">
+  <footer class="page-footer grey darken-4">
         <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -75,5 +100,12 @@
             </div>
         </div>
   <footer>
+  <script>
+      $(document).ready(function(){
+      $('.slider').slider({full_width: true});
+      $(".dropdown-button").dropdown();
+      $(".button-collapse").sideNav();
+    });
+  </script>
 </body>
 </html>

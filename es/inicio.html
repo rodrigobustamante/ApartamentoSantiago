@@ -5,7 +5,7 @@
 	<title>Inicio</title>
   <link rel="stylesheet" type="text/css" href="../css/style.css">
 	<!-- Materialize CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link rel="stylesheet" href="../css/materialize.min.css">
   <!-- Jquery JS -->
   <script src="../js/jquery-2.2.3.min.js"></script>
   <!-- Materialize JS -->
@@ -14,17 +14,44 @@
 <body>
 	<header>
 		<nav>
-			<div class="nav-wrapper green darken-4">
+			<div class="nav-wrapper grey darken-4">
 		      <a href="inicio.html" class="brand-logo"><img src="../images/logo.png" alt="logo"></a>
-		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <!--Boton de menu en celulares-->
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <!--Menu-->
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
 		        <li><a href="inicio.html">Inicio</a></li>
 		        <li><a href="servicios.html">Servicios</a></li>
 		        <li><a href="galeria.html">Galería</a></li>
 		        <li><a href="entorno.html">Entorno</a></li>
 		        <li><a href="nosotros.html">Nosotros</a></li>
 		        <li><a href="contacto.html">Contacto</a></li>
-            <li><a href="../index.html">Cambiar Idioma</a></li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown1">Cambiar Idioma</a>
+            </li>
 		      </ul>
+          <!--Menu de cambio de idioma-->
+          <ul class="dropdown-content" id="dropdown1">
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../en/home.html">English</a></li>
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../pt/inicio.html">Portuguese</a></li>
+          </ul>
+          <!--Menu desplegable de en celulares-->
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="entorno.html">Entorno</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+              <a class="dropdown-button" data-activates="dropdown2">Cambiar Idioma</a>
+            </li>
+          </ul>
+          <!--Menu desplegable de idioma en celulares-->
+          <ul class="dropdown-content" id="dropdown2">
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../en/home.html">English</a></li>
+            <li><a class="grey darken-4 grey-text text-lighten-3" href="../pt/inicio.html">Portuguese</a></li>
+          </ul>
 		    </div>
 		</nav>
     <br>
@@ -32,7 +59,7 @@
 	<div class="container">
 		<div class="center-align">
         <div class="slider">
-          <ul class="slides">
+          <ul class="slides grey darken-4">
             <li>
               <img src="../images/bellasartes.jpg">
               <div class="caption left-align">
@@ -55,8 +82,8 @@
             </li>
           </ul>
         </div>
-    <div class="card-panel hoverable green darken-4">
-        <h4 class="grey-text text-lighten-4">El mejor lugar para su estadía en Santiago</h4>
+    <div class="card-panel hoverable grey darken-4">
+        <h4 class="grey-text text-lighten-4">El mejor lugar para tu estadía en Santiago</h4>
     </div>
       <!-- Cards -->
       <div id="cards">
@@ -66,10 +93,10 @@
               <div class="card">
               <div class="card-image">
                 <img src="../images/piscina.jpg">
-                <span class="card-title">Servicios</span>
               </div>
               <div class="card-content">
-                <p>Conozca los servicios que tenemos para ofrecer. Haremos de su estadía un descanso.</p>
+                <span class="card-title">Servicios</span>
+                <p>Ven a conocer los servicios que tenemos para ofrecer. Haremos de tu estadía sea un descanso.</p>
               </div>
               <div class="card-action">
                 <a href="#">Ver más</a>
@@ -80,10 +107,11 @@
               <div class="card">
               <div class="card-image">
                 <img src="../images/depto.jpg">
-                <span class="card-title">Galeria</span>
+                
               </div>
               <div class="card-content">
-                <p>Revise la galería para la información más detallada de la equipación de nuestros departamentos.</p>
+                <span class="card-title">Galeria</span>
+                <p>Revisa la galería para información más detallada de la equipación de nuestros departamentos.</p>
               </div>
               <div class="card-action">
                 <a href="#">Ver más</a>
@@ -94,10 +122,10 @@
               <div class="card">
               <div class="card-image">
                 <img src="../images/places.jpg">
-                <span class="card-title">Entorno</span>
               </div>
               <div class="card-content">
-                <p>Conozca lo que Santiago tiene para ofrecer al turista. Museos, Teatro, Cafés y mucho más!</p>
+                <span class="card-title">Entorno</span>
+                <p>Conoce lo que Santiago tiene para ofrecer al turista. Museos, Teatro, Cafés y mucho más!</p>
               </div>
               <div class="card-action">
                 <a href="#">Ver más</a>
@@ -109,7 +137,7 @@
       </div>
 		</div>
 	</div>
-	<footer class="page-footer green darken-4">
+	<footer class="page-footer grey darken-4">
         <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -140,7 +168,9 @@
     <footer>
     <script>
       $(document).ready(function(){
-      $('.slider').slider({full_width: true});
+      $(".slider").slider({full_width: true});
+      $(".dropdown-button").dropdown();
+      $(".button-collapse").sideNav();
     });
     </script>
 </body>

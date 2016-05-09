@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
   <!-- Jquery JS -->
   <script src="../js/jquery-2.2.3.min.js"></script>
- <!-- Materialize JS -->
+  <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+  <!-- LightGallery -->
+  <link type="text/css" rel="stylesheet" href="../css/lightgallery/lightgallery.css" /> 
 </head>
 <body>
   <header>
@@ -36,31 +38,69 @@
     <div class="card-panel hoverable green darken-4">
       <h3 class="grey-text text-lighten-4">Galeria</h3>
     </div>
-    <div>
-      <div class="slider">
-          <ul class="slides">
-            <li>
-              <img src="../images/bellasartes.jpg">
-              <div class="caption left-align">
-              </div>
-            </li>
-            <li>
-              <img src="../images/lastarria.jpg">
-              <div class="caption left-align">
-              </div>
-            </li>
-            <li>
-              <img src="../images/santalucia.jpg">
-              <div class="caption left-align">
-              </div>
-            </li>
-            <li>
-              <img src="../images/bellavista.jpg">
-              <div class="caption left-align">
-              </div>
-            </li>
-          </ul>
-        </div>
+    <div class="center-align">
+      <div id="srcset">
+        <a href="../images/gallery/habitacion.jpg" data-srcset="../images/gallery/habitacion.jpg 375w, ../images/gallery/habitacion.jpg 480w, ../images/gallery/habitacion.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/habitacion.jpg" />
+        </a>
+        <a href="../images/gallery/habitacion2.jpg" data-srcset="../images/gallery/habitacion2.jpg 375w, ../images/gallery/habitacion2.jpg 480w, ../images/gallery/habitacion2.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/habitacion2.jpg" />
+        </a>
+        <a href="../images/gallery/habitacion3.jpg" data-srcset="../images/gallery/habitacion3.jpg 375w, ../images/gallery/habitacion3.jpg 480w, ../images/gallery/habitacion3.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/habitacion3.jpg" />
+        </a>
+        <a href="../images/gallery/living2.jpg" data-srcset="../images/gallery/living2.jpg 375w, ../images/gallery/living2.jpg 480w, ../images/gallery/living2.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/living2.jpg" />
+        </a>
+        <a href="../images/gallery/living.jpg" data-srcset="../images/gallery/living.jpg 375w, ../images/gallery/living.jpg 480w, ../images/gallery/living.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/living.jpg" />
+        </a>
+        <a href="../images/gallery/cocina.jpg" data-srcset="../images/gallery/cocina.jpg 375w, ../images/gallery/cocina.jpg 480w, ../images/gallery/cocina.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/cocina.jpg" />
+        </a>
+        <a href="../images/gallery/living3.jpg" data-srcset="../images/gallery/living3.jpg 375w, ../images/gallery/living3.jpg 480w, ../images/gallery/living3.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/living3.jpg" />
+        </a>
+        <a href="../images/gallery/living4.jpg" data-srcset="../images/gallery/living4.jpg 375w, ../images/gallery/living4.jpg 480w, ../images/gallery/living4.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/living4.jpg" />
+        </a>
+        <a href="../images/gallery/baño.jpg" data-srcset="../images/gallery/baño.jpg 375w, ../images/gallery/baño.jpg 480w, ../images/gallery/baño.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/baño.jpg" />
+        </a>
+        <a href="../images/gallery/vista.jpg" data-srcset="../images/gallery/vista.jpg 375w, ../images/gallery/vista.jpg 480w, ../images/gallery/vista.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/vista.jpg" />
+        </a>
+        <a href="../images/gallery/lobby.jpg" data-srcset="../images/gallery/lobby.jpg 375w, ../images/gallery/lobby.jpg 480w, ../images/gallery/lobby.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/lobby.jpg" />
+        </a>
+        <a href="../images/gallery/gimnasio.jpg" data-srcset="../images/gallery/gimnasio.jpg 375w, ../images/gallery/gimnasio.jpg 480w, ../images/gallery/gimnasio.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/gimnasio.jpg" />
+        </a>
+        <a href="../images/gallery/piscina.jpg" data-srcset="../images/gallery/piscina.jpg 375w, ../images/gallery/piscina.jpg 480w, ../images/gallery/piscina.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/piscina.jpg" />
+        </a>
+        <a href="../images/gallery/terraza.jpg" data-srcset="../images/gallery/terraza.jpg 375w, ../images/gallery/terraza.jpg 480w, ../images/gallery/terraza.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/terraza.jpg" />
+        </a>
+        <a href="../images/gallery/edificio.jpg" data-srcset="../images/gallery/edificio.jpg 375w, ../images/gallery/edificio.jpg 480w, ../images/gallery/edificio.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/edificio.jpg" />
+        </a>
+        <a href="../images/gallery/metro.jpg" data-srcset="../images/gallery/metro.jpg 375w, ../images/gallery/metro.jpg 480w, ../images/gallery/metro.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/metro.jpg" />
+        </a>
+        <a href="../images/gallery/metro2.jpg" data-srcset="../images/gallery/metro2.jpg 375w, ../images/gallery/metro2.jpg 480w, ../images/gallery/metro2.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/metro2.jpg" />
+        </a>
+        <a href="../images/gallery/vista2.jpg" data-srcset="../images/gallery/vista2.jpg 375w, ../images/gallery/vista2.jpg 480w, ../images/gallery/vista2.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/vista2.jpg" />
+        </a>
+        <a href="../images/gallery/santalucia.jpg" data-srcset="../images/gallery/santalucia.jpg 375w, ../images/gallery/santalucia.jpg 480w, ../images/gallery/santalucia.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/santalucia.jpg" />
+        </a>
+        <a href="../images/gallery/lastarria.jpg" data-srcset="../images/gallery/lastarria.jpg 375w, ../images/gallery/lastarria.jpg 480w, ../images/gallery/lastarria.jpg 757w" data-sizes="(min-width: 40em) 80vw, 100vw">
+            <img src="../images/thumbnail/lastarria.jpg" />
+        </a>
+      </div>
     </div>
   </div>
   <footer class="page-footer green darken-4">
@@ -92,10 +132,11 @@
             </div>
         </div>
   <footer>
+  <script src="../js/lightgallery/lightgallery.js"></script>
+  <script src="../js/lightgallery/lg-thumbnail.js"></script>
+  <script src="../js/lightgallery/lg-fullscreen.js"></script>
   <script>
-     $(document).ready(function(){
-      $('.slider').slider({full_width: true});
-    });
+    $('#srcset').lightGallery();   
   </script>
 </body>
 </html>

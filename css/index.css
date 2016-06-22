@@ -10,13 +10,14 @@
 	font-size: 150%;
 }
 
-
-
-.bgimage {
-background-image: url(../images/panoramica.jpg);
-background-size: 100%;
-}
-
-.bgimage-inside {
-padding-top: 37.36%; /* this is actually (426/1140)*100 */
+body{
+	background-size: 100%;
+	background-image: url(../images/panoramica.jpg) ;
+	background-size: cover;
+  	background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
